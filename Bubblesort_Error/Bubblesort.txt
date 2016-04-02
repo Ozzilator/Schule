@@ -1,0 +1,19 @@
+{
+	listBox2->Items->Clear();
+	char die_kleine;
+
+	for (int i = 0; i <= 9; i++)
+	{
+		for (int a = 0; a <= 8; i++)
+		{
+			if(Rand[a] > Rand[a + 1])
+			{
+			die_kleine = Rand[a];
+			Rand[a] = Rand[a + 1];
+			Rand[a + 1] = die_kleine;
+			}
+		}
+		listBox2->Items->Add(Rand[i]);
+
+	}
+}
