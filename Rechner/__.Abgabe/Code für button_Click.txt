@@ -1,0 +1,16 @@
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) { // Plus
+		textBox3->Text = (Convert::ToDouble(textBox1->Text) + Convert::ToDouble(textBox2->Text)).ToString();
+		//Text von textBox3 ist die Summe von textBox1 umgewandelt in Double und Text von textBox2 umgewandelt in Double als String
+	}
+
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) { // Minus
+		textBox3->Text = (Convert::ToDouble(textBox1->Text) - Convert::ToDouble(textBox2->Text)).ToString();
+	}
+
+	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) { // Mal
+		textBox3->Text = (Convert::ToDouble(textBox1->Text) * Convert::ToDouble(textBox2->Text)).ToString();
+	}
+
+	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) { // Geteilt
+		textBox3->Text = (Convert::ToDouble(textBox1->Text) / Convert::ToDouble(textBox2->Text)).ToString();
+	}
